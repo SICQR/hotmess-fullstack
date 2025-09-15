@@ -1,0 +1,15 @@
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.clickable {
+  cursor: var(--interactions-cursor-pointer);
+  transition: transform var(--interactions-transitions-duration-fast) var(--interactions-transitions-easing-ease-in-out);
+
+  &:hover {
+    transform: scale(var(--interactions-hover-effect-scale));
+  }
+}

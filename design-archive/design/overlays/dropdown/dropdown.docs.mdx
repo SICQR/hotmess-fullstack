@@ -1,0 +1,46 @@
+---
+description: A flexible and accessible dropdown component that renders interactive content within a visually distinct overlay.
+labels: ['dropdown', 'ui', 'interactive']
+---
+
+## Component Overview
+The `Dropdown` component provides a way to display a set of options or content in a toggleable overlay. It accepts a placeholder element that triggers the dropdown and can render any type of content within the dropdown panel.
+
+## Basic Usage
+A simple dropdown with a list of options. The `placeholder` prop is used to define the element that toggles the dropdown.
+
+```jsx
+<Dropdown placeholder={<button>Options</button>}>
+  <ul>
+    <li>Profile</li>
+    <li>Settings</li>
+    <li>Logout</li>
+  </ul>
+</Dropdown>
+```
+## Right Aligned Dropdown
+This example demonstrates a dropdown aligned to the right, often used for user profile menus. The `openPosition` prop is set to `bottom-right` to achieve this.
+```jsx
+<Dropdown
+  openPosition="bottom-right"
+  placeholder={<img src="user-avatar.jpg" alt="User" />}
+>
+  <ul>
+    <li>View Account</li>
+    <li>Help Center</li>
+    <li>Sign Out</li>
+  </ul>
+</Dropdown>
+```
+## Dropdown with Complex Content
+A dropdown that contains more than just a list, showing its flexibility. This example includes a header, paragraph, and a button within the dropdown.
+```jsx
+<Dropdown placeholder={<button>Notifications</button>}>
+  <div>
+    <h4>New Update Available</h4>
+    <p>
+      A new version is ready. Update now to get the latest features and security improvements.
+    </p>
+    <button>Update Now</button>
+  </div>
+</Dropdown>

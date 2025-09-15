@@ -1,0 +1,66 @@
+.codeBlock {
+  box-sizing: border-box;
+  position: relative;
+  border-radius: var(--borders-radius-large);
+  background: var(--interactions-gradients-code-block, #2d2d2d);
+  box-shadow: var(--effects-shadows-raised);
+  overflow: hidden;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-small) var(--spacing-large);
+  background-color: rgba(0, 0, 0, 0.2);
+  border-bottom: var(--borders-default-width) solid var(--borders-default-color);
+}
+
+.title {
+  font-size: var(--typography-sizes-body-small);
+  font-weight: var(--typography-font-weight-medium);
+  color: var(--colors-text-secondary);
+}
+
+.copyButton {
+  gap: var(--spacing-small);
+  color: var(--colors-text-secondary) !important;
+}
+
+.copyButton:hover {
+  color: var(--colors-text-primary) !important;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.highlighter {
+  & > pre {
+    background: transparent !important;
+    padding: var(--spacing-large) !important;
+    margin: 0 !important;
+    font-size: var(--typography-sizes-body-default);
+    line-height: var(--typography-line-height-base);
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-x: auto;
+  }
+
+  /* Custom Scrollbar */
+  & > pre::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  & > pre::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  & > pre::-webkit-scrollbar-thumb {
+    background-color: var(--colors-surface-secondary);
+    border-radius: var(--borders-radius-large);
+  }
+
+  & > pre::-webkit-scrollbar-thumb:hover {
+    background-color: var(--colors-primary-default);
+  }
+}

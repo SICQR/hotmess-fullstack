@@ -1,0 +1,102 @@
+---
+description: A theme using the Anton display font, providing light and dark modes with design tokens for typography, colors, spacing, and sizes.
+labels: ['react', 'design', 'theme', 'anton']
+---
+
+A theme component for the Philip Gizzie design language and tokens, featuring the Anton font.
+
+## Get started
+
+To use the Philip Gizzie theme in your app, install the theme and apply it to your component tree.
+Themes are usually applied on the root of your component tree.
+
+```bash
+$ bit install philip-gizzie-theme
+```
+Alternatively, use PNPM or NPM:
+```bash
+$ npm install philip-gizzie-theme
+```
+
+```tsx
+import { PhilipGizzieTheme } from './philip-gizzie-theme.js';
+
+export function MyApp() {
+  return (
+    <PhilipGizzieTheme>
+      <div>My themed app using Anton font</div>
+    </PhilipGizzieTheme>
+  );
+}
+```
+
+## Light and Dark Mode
+
+The theme can be toggled between light and dark modes using the `useThemeController` hook.
+
+```tsx
+import { PhilipGizzieTheme, useThemeController } from './philip-gizzie-theme.js';
+
+function MyThemedApp() {
+  const { themeMode, toggleTheme } = useThemeController();
+  return (
+    <>
+      <button onClick={toggleTheme}>
+        Toggle Theme (Current: {themeMode})
+      </button>
+      <div>
+        Content of the app
+      </div>
+    </>
+  );
+}
+export function App() {
+  return (
+    <PhilipGizzieTheme>
+      <MyThemedApp />
+    </PhilipGizzieTheme>
+  );
+}
+```
+
+## Overriding Theme Tokens
+
+You can override the default theme tokens by passing an `overrides` prop to the `PhilipGizzieTheme` component.
+
+```tsx
+import { PhilipGizzieTheme } from './philip-gizzie-theme.js';
+
+function App() {
+  const themeOverrides = {
+    colors: {
+      primary: {
+        default: 'red',
+      },
+    },
+  };
+  return (
+    <PhilipGizzieTheme overrides={themeOverrides}>
+      <div>
+        Content with overridden theme
+      </div>
+    </PhilipGizzieTheme>
+  );
+}
+```
+
+## Applying custom styles
+
+You can apply custom styles to the theme using the `style` prop.
+
+```tsx
+import { PhilipGizzieTheme } from './philip-gizzie-theme.js';
+
+function App() {
+  return (
+    <PhilipGizzieTheme style={{ backgroundColor: 'lightyellow' }}>
+      <div>
+        Content with custom styles
+      </div>
+    </PhilipGizzieTheme>
+  );
+}

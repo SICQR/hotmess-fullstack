@@ -1,0 +1,31 @@
+---
+description: A responsive and visually appealing image component.
+labels: ['image', 'ui', 'media']
+---
+
+Use the `Image` component to display images responsively and with a modern look.
+
+## Basic Usage
+The `Image` component requires `src` and `alt` props. It automatically handles responsiveness, scaling the image to fit its container.
+
+```jsx
+<Image src="image.jpg" alt="My Image" />
+```
+## Custom Styling
+Apply custom styles using the `className` or `style` props to match your design needs.
+```jsx
+<Image
+  src="image.jpg"
+  alt="Styled Image"
+  className="custom-image-class"
+  style={{ borderRadius: '8px' }}
+/>
+```
+## Image Gallery
+Create an image gallery using the `Image` component in a grid layout. This example demonstrates displaying multiple images in a responsive grid.
+```jsx
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '16px' }}>
+  <Image src="image1.jpg" alt="Image 1" />
+  <Image src="image2.jpg" alt="Image 2" />
+  <Image src="image3.jpg" alt="Image 3" />
+</div>

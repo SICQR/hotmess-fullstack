@@ -1,0 +1,91 @@
+---
+description: A component that displays a short, informative message when a user hovers over an element.
+labels: ['ui', 'tooltip']
+---
+
+## Basic Tooltip
+
+This example shows a simple tooltip that appears when you hover over a button.
+
+```jsx
+<Tooltip text="This is a helpful tip!">
+  <button style={{
+    padding: 'var(--spacing-small) var(--spacing-default)',
+    border: 'var(--borders-default-width) var(--borders-default-style) var(--borders-default-color)',
+    borderRadius: 'var(--borders-radius-medium)',
+    backgroundColor: 'var(--colors-surface-primary)',
+    color: 'var(--colors-text-primary)',
+    fontFamily: 'var(--typography-font-family)',
+    cursor: 'var(--interactions-cursor-pointer)',
+  }}>Hover over me</button>
+</Tooltip>
+```
+## Tooltip with Different Positions
+Tooltips can be positioned in different directions relative to the element they describe. Here's how to use the `position` prop to change the placement of the tooltip.
+```jsx
+<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '50px' }}>
+  <Tooltip text="Tooltip on top" position="top">
+    <button style={{
+      padding: 'var(--spacing-small) var(--spacing-default)',
+      border: 'var(--borders-default-width) var(--borders-default-style) var(--borders-default-color)',
+      borderRadius: 'var(--borders-radius-medium)',
+      backgroundColor: 'var(--colors-surface-primary)',
+      color: 'var(--colors-text-primary)',
+      fontFamily: 'var(--typography-font-family)',
+      cursor: 'var(--interactions-cursor-pointer)',
+    }}>Top</button>
+  </Tooltip>
+  <Tooltip text="Tooltip on the right" position="right">
+    <button style={{
+      padding: 'var(--spacing-small) var(--spacing-default)',
+      border: 'var(--borders-default-width) var(--borders-default-style) var(--borders-default-color)',
+      borderRadius: 'var(--borders-radius-medium)',
+      backgroundColor: 'var(--colors-surface-primary)',
+      color: 'var(--colors-text-primary)',
+      fontFamily: 'var(--typography-font-family)',
+      cursor: 'var(--interactions-cursor-pointer)',
+    }}>Right</button>
+  </Tooltip>
+  <Tooltip text="Tooltip on the bottom" position="bottom">
+    <button style={{
+      padding: 'var(--spacing-small) var(--spacing-default)',
+      border: 'var(--borders-default-width) var(--borders-default-style) var(--borders-default-color)',
+      borderRadius: 'var(--borders-radius-medium)',
+      backgroundColor: 'var(--colors-surface-primary)',
+      color: 'var(--colors-text-primary)',
+      fontFamily: 'var(--typography-font-family)',
+      cursor: 'var(--interactions-cursor-pointer)',
+    }}>Bottom</button>
+  </Tooltip>
+  <Tooltip text="Tooltip on the left" position="left">
+    <button style={{
+      padding: 'var(--spacing-small) var(--spacing-default)',
+      border: 'var(--borders-default-width) var(--borders-default-style) var(--borders-default-color)',
+      borderRadius: 'var(--borders-radius-medium)',
+      backgroundColor: 'var(--colors-surface-primary)',
+      color: 'var(--colors-text-primary)',
+      fontFamily: 'var(--typography-font-family)',
+      cursor: 'var(--interactions-cursor-pointer)',
+    }}>Left</button>
+  </Tooltip>
+</div>
+```
+## Tooltip on Image
+This example demonstrates how to use a tooltip on an image, providing context or a description.
+```jsx
+<Tooltip
+  text="blue and white checkered textile"
+  position="bottom"
+>
+  <img
+    src="https://images.unsplash.com/photo-1605106250963-ffda6d2a4b32?ixid=M3w3MDc2NDF8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGludGVyZmFjZSUyMGVsZW1lbnRzfGVufDF8Mnx8Ymx1ZXwxNzU3ODQ3NDkwfDA&ixlib=rb-4.1.0"
+    alt="blue and white checkered textile"
+    style={{
+      width: '120px',
+      height: '120px',
+      objectFit: 'cover',
+      borderRadius: 'var(--borders-radius-large)',
+      boxShadow: 'var(--effects-shadows-small)',
+    }}
+  />
+</Tooltip>

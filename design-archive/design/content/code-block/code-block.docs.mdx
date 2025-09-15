@@ -1,0 +1,35 @@
+---
+description: A component to display code snippets with syntax highlighting and copy functionality.
+labels: ['code', 'ui', 'display']
+---
+
+The `CodeBlock` component allows you to display code snippets with syntax highlighting for various programming languages. It also provides a button to copy the code to the clipboard.
+
+## Basic Usage
+
+Displaying a simple code snippet:
+
+```jsx
+<CodeBlock language="javascript">
+  console.log("Hello, world!");
+</CodeBlock>
+```
+## Code Block with Title
+You can add a title to the code block for better context:
+```jsx
+<CodeBlock language="python" title="main.py">
+  def hello_world():
+      print("Hello, world!")
+  hello_world()
+</CodeBlock>
+```
+## Copy to Clipboard
+The component includes a copy button that allows users to easily copy the code to their clipboard. A "Copied!" message is displayed briefly after copying.
+```jsx
+<CodeBlock language="json" title="config.json">
+{`
+  "name": "example-app",
+  "version": "1.0.0",
+  "description": "An example application"
+`}
+</CodeBlock>

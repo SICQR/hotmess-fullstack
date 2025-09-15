@@ -1,0 +1,27 @@
+---
+description: A versatile and accessible paragraph component that prioritizes readability and consistent typography.
+labels: ['paragraph', 'typography', 'ui']
+---
+
+## Basic Usage
+
+The most straightforward way to use the `Paragraph` component is to wrap your text content:
+
+```jsx
+<Paragraph>
+  This is a standard paragraph. You can use this component to ensure consistent typography across your application.
+</Paragraph>
+```
+## Rendering as a Different Element
+You can change the underlying HTML element by using the `element` prop. This is useful for semantic purposes or when you need to integrate the paragraph into a specific layout:
+```jsx
+<Paragraph element="span">
+  This paragraph is rendered as a `span` element, which is useful for inline text.
+</Paragraph>
+```
+## Applying Custom Styles
+You can apply custom styles to the `Paragraph` component using the `className` or `style` props:
+```jsx
+<Paragraph className="custom-paragraph" style={{ color: 'blue' }}>
+  This paragraph has custom styles applied to it.
+</Paragraph>

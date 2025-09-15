@@ -1,0 +1,9 @@
+.paragraph {
+  font-family: var(--typography-font-family);
+  font-size: var(--typography-sizes-body-default);
+  line-height: var(--typography-line-height-base);
+  color: var(--colors-text-primary);
+  font-weight: var(--typography-font-weight-regular);
+  margin: 0;
+  box-sizing: border-box;
+}

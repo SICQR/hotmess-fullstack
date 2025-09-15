@@ -1,0 +1,48 @@
+---
+description: A responsive page layout component with content area and inner navigation.
+labels: ['layout', 'page', 'responsive']
+---
+
+The `PageLayout` component provides a consistent structure for pages, including a main content area and an optional inner navigation section. It also handles SEO-related head tags like title and meta description.
+
+## Basic Usage
+
+This example demonstrates the basic usage of the `PageLayout` component with a title and some content.
+
+```jsx
+<PageLayout title="Home Page">
+  <h1>Welcome!</h1>
+  <p>This is the content of the home page.</p>
+</PageLayout>
+```
+
+## With Navigation
+
+This example shows how to include an inner navigation section using the `navigation` prop.
+
+```jsx
+const navigation = (
+  <Tabs tabs={[
+    { label: 'Tab 1', component: () => <div>Content 1</div> },
+    { label: 'Tab 2', component: () => <div>Content 2</div> }
+  ]}/>
+);
+<PageLayout title="Dashboard" navigation={navigation}>
+  <h1>Dashboard Content</h1>
+  <p>This is the main content of the dashboard.</p>
+</PageLayout>
+```
+
+## SEO Optimization
+
+This example demonstrates how to use the `description` and `keywords` props for SEO optimization.
+
+```jsx
+<PageLayout
+  title="SEO Optimized Page"
+  description="This page is optimized for search engines."
+  keywords="seo, optimization, page layout"
+>
+  <h1>SEO Content</h1>
+  <p>This content is optimized for search engines.</p>
+</PageLayout>

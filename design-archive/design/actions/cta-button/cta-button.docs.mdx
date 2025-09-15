@@ -1,0 +1,65 @@
+---
+description: A visually compelling and highly interactive Call-to-Action (CTA) button designed to grab user attention and encourage clicks.
+labels: ['button', 'ui', 'actions']
+---
+
+## Component usage
+
+Use the `CtaButton` component to highlight important actions on your page.
+
+### Primary, Secondary, and Tertiary Buttons
+
+Demonstrates the different appearance options available for the `CtaButton`.
+
+```jsx
+<CtaButton appearance="primary" onClick={() => alert('Primary CTA clicked!')}>
+  Get Started Now
+</CtaButton>
+
+<CtaButton appearance="secondary" onClick={() => alert('Secondary CTA clicked!')}>
+  Learn More
+</CtaButton>
+
+<CtaButton appearance="tertiary" onClick={() => alert('Tertiary CTA clicked!')}>
+  Request a Demo
+</CtaButton>
+
+```
+
+### Disabled Buttons
+Showcases how to disable the `CtaButton` to prevent user interaction.
+
+```jsx
+<CtaButton appearance="primary" disabled>
+  Primary Disabled
+</CtaButton>
+
+<CtaButton appearance="secondary" disabled>
+  Secondary Disabled
+</CtaButton>
+
+<CtaButton appearance="tertiary" disabled>
+  Tertiary Disabled
+</CtaButton>
+
+```
+
+### Buttons as Links
+Illustrates the use of `CtaButton` as a link using the `href` property.
+
+```jsx
+<CtaButton href="/pricing" appearance="primary">
+  View Pricing
+</CtaButton>
+
+<CtaButton
+  href="https://bit.dev"
+  external
+  appearance="secondary"
+>
+  Visit Our Site
+</CtaButton>
+
+<CtaButton href="/contact" disabled appearance="tertiary">
+  Contact (Disabled)
+</CtaButton>

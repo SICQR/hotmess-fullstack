@@ -1,0 +1,78 @@
+---
+description: A modern and customizable select list component.
+labels: ['select', 'list', 'form', 'ui']
+---
+
+## Basic Usage
+
+The `SelectList` component allows users to select an option from a dropdown list. It can be used as a controlled component by providing `selectedValue` and `onSelect` props.
+
+```jsx
+const sampleOptions = [
+  { value: 'new-york', label: 'New York' },
+  { value: 'london', label: 'London' },
+  { value: 'tokyo', label: 'Tokyo' },
+];
+() => {
+  const [selectedValue, setSelectedValue] = React.useState(undefined);
+  return (
+    <div style={{ width: '320px' }}>
+      <SelectList
+        options={sampleOptions}
+        selectedValue={selectedValue}
+        onSelect={setSelectedValue}
+        placeholder="Select a city..."
+      />
+    </div>
+  );
+}
+```
+## Pre-selected Value
+You can set a default selected value by passing a `selectedValue` prop to the `SelectList` component.
+```jsx
+const sampleOptions = [
+  { value: 'new-york', label: 'New York' },
+  { value: 'london', label: 'London' },
+  { value: 'tokyo', label: 'Tokyo' },
+];
+() => {
+  const [selectedValue, setSelectedValue] = React.useState('tokyo');
+  return (
+    <div style={{ width: '320px' }}>
+      <SelectList
+        options={sampleOptions}
+        selectedValue={selectedValue}
+        onSelect={setSelectedValue}
+      />
+    </div>
+  );
+}
+```
+## Select List With Many Options
+When dealing with a large number of options, the `SelectList` component automatically provides a scrollable dropdown list.
+```jsx
+const longSampleOptions = [
+  { value: 'item-1', label: 'To the sky' },
+  { value: 'item-2', label: 'a white and black object on a blue background' },
+  { value: 'item-3', label: 'black and white building.' },
+  { value: 'item-4', label: 'a yellow box with a square opening' },
+  { value: 'item-5', label: 'a blurry photo of a light blue background' },
+  { value: 'item-6', label: 'Round Windows' },
+  { value: 'item-7', label: 'blue and white checkered textile' },
+  { value: 'item-8', label: 'Ups' },
+  { value: 'item-9', label: 'White h2o molecules or atoms' },
+  { value: 'item-10', label: 'a blue and white abstract background' },
+];
+() => {
+  const [selectedValue, setSelectedValue] = React.useState('item-9');
+  return (
+    <div style={{ width: '320px' }}>
+      <SelectList
+        options={longSampleOptions}
+        selectedValue={selectedValue}
+        onSelect={setSelectedValue}
+        placeholder="Select an item..."
+      />
+    </div>
+  );
+}

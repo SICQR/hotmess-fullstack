@@ -1,0 +1,44 @@
+.ctaButton {
+  box-sizing: border-box; /* Ensure no overflow */
+  /* Make the button larger and more prominent */
+  padding: var(--spacing-large) var(--spacing-xl);
+  font-size: var(--typography-sizes-body-large);
+  font-weight: var(--typography-font-weight-bold);
+  letter-spacing: var(--typography-letter-spacing-wide);
+  border-radius: var(--borders-radius-large);
+  box-shadow: var(--effects-shadows-raised);
+  transform: scale(1); /* Initial state for animations */
+  transition:
+    transform var(--interactions-transitions-duration-medium)
+      var(--interactions-transitions-easing-ease-out),
+    box-shadow var(--interactions-transitions-duration-medium)
+      var(--interactions-transitions-easing-ease-out);
+
+  /* A subtle animation to draw attention */
+  animation: cta-pulse 2.5s infinite cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+/* Enhance the hover effect for more interactivity */
+.ctaButton:hover:not(:disabled) {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: var(--effects-shadows-x-large);
+}
+
+/* Primary appearance gets a vibrant gradient */
+.ctaButton.primary {
+  background: var(--interactions-gradients-primary);
+  border: none;
+}
+
+/* Define the pulse animation */
+@keyframes cta-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: var(--effects-shadows-raised);
+  }
+  50% {
+    transform: scale(1.02);
+    box-shadow: var(--effects-shadows-large);
+  }
+}

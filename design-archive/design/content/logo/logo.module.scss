@@ -1,0 +1,46 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-small);
+  text-decoration: none;
+  color: var(--colors-text-primary);
+  box-sizing: border-box;
+  transition: opacity var(--interactions-transitions-duration-fast) var(--interactions-transitions-easing-ease-in-out);
+  cursor: var(--interactions-cursor-pointer);
+}
+
+.logo:hover {
+  opacity: var(--effects-opacity-hover);
+}
+
+.logoImage {
+  display: block;
+  flex-shrink: 0;
+  color: var(--colors-primary-default);
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1;
+}
+
+.name {
+  font-family: var(--typography-font-family);
+  font-weight: var(--typography-font-weight-bold);
+  font-size: var(--typography-sizes-heading-h5);
+  line-height: var(--typography-line-height-heading);
+  color: var(--colors-text-primary);
+  white-space: nowrap;
+}
+
+.slogan {
+  font-family: var(--typography-font-family);
+  font-weight: var(--typography-font-weight-regular);
+  font-size: var(--typography-sizes-body-small);
+  line-height: var(--typography-line-height-base);
+  color: var(--colors-text-secondary);
+  white-space: nowrap;
+  margin-top: -2px;
+}

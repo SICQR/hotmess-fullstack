@@ -1,0 +1,18 @@
+@import url('https://api.fontshare.com/v2/css?f[]=anton@400&display=swap');
+
+.philipGizzieTheme {
+  box-sizing: border-box;
+  // use a font family here to apply a default font
+  // on theme childs.
+  font-family: var(--typography-font-family);
+
+  // use the theme background color to apply for all
+  // components in your tree.
+  background-color: var(--colors-surface-background);
+}
+
+:global {
+  body {
+    margin: 0;
+  }
+}

@@ -1,0 +1,45 @@
+---
+description: A visual representation of a user, displaying either an image or their initials, with optional status indication.
+labels: ['avatar', 'ui', 'image']
+---
+
+## Basic Avatar with Image
+
+Displays an avatar with an image from a provided source.
+
+```jsx
+<Avatar
+  src="https://images.unsplash.com/photo-1584999734482-0361aecad844?ixid=M3w3MDc2NDF8MHwxfHNlYXJjaHwyfHxkZXZlbG9wZXIlMjBwcm9maWxlfGVufDF8Mnx8Ymx1ZXwxNzU3ODQ3NDg3fDA&ixlib=rb-4.1.0"
+  name="Philip Gizzie"
+/>
+```
+## Avatar with Initials
+Renders an avatar displaying the user's initials when no image source is provided.
+```jsx
+<Avatar name="Jane Doe" />
+```
+## Avatar with Status Indicators
+Shows an avatar with a status indicator to represent the user's current online status (online, away, busy, offline).
+```jsx
+<div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
+  <Avatar
+    src="https://images.unsplash.com/photo-1635404617144-8e262a622e41?ixid=M3w3MDc2NDF8MHwxfHNlYXJjaHwxfHxkZXZlbG9wZXIlMjBwcm9maWxlfGVufDF8Mnx8Ymx1ZXwxNzU3ODQ3NDg3fDA&ixlib=rb-4.1.0"
+    name="Online User"
+    status="online"
+  />
+  <Avatar
+    src="https://images.unsplash.com/photo-1635828833991-e0bd3bf753af?ixid=M3w3MDc2NDF8MHwxfHNlYXJjaHwzfHxkZXZlbG9wZXIlMjBwcm9maWxlfGVufDF8Mnx8Ymx1ZXwxNzU3ODQ3NDg3fDA&ixlib=rb-4.1.0"
+    name="Away User"
+    status="away"
+  />
+  <Avatar
+    src="https://images.unsplash.com/photo-1655993810480-c15dccf9b3a0?ixid=M3w3MDc2NDF8MHwxfHNlYXJjaHw0fHxkZXZlbG9wZXIlMjBwcm9maWxlfGVufDF8Mnx8Ymx1ZXwxNzU3ODQ3NDg3fDA&ixlib=rb-4.1.0"
+    name="Busy User"
+    status="busy"
+  />
+  <Avatar
+    src="https://images.unsplash.com/photo-1633544325196-bcf8bf81ead0?ixid=M3w3MDc2NDF8MHwxfHNlYXJjaHw1fHxkZXZlbG9wZXIlMjBwcm9maWxlfGVufDF8Mnx8Ymx1ZXwxNzU3ODQ0NzE1fDA&ixlib=rb-4.1.0"
+    name="Offline User"
+    status="offline"
+  />
+</div>

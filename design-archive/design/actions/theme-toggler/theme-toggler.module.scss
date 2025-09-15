@@ -1,0 +1,54 @@
+.themeToggler {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: var(--borders-radius-circle);
+  border: none;
+  background-color: var(--colors-surface-primary);
+  box-shadow: var(--effects-shadows-small);
+  cursor: var(--interactions-cursor-pointer);
+  overflow: hidden;
+  transition: background-color var(--interactions-transitions-duration-fast) var(--interactions-transitions-easing-ease-in-out);
+  box-sizing: border-box;
+
+  &:hover {
+    background-color: var(--colors-surface-secondary);
+  }
+
+  &:focus-visible {
+    outline: var(--borders-focus-width) var(--borders-focus-style) var(--borders-focus-color);
+    outline-offset: var(--borders-focus-offset);
+  }
+}
+
+.iconWrapper {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  transition: transform var(--interactions-transitions-duration-medium) var(--interactions-transitions-easing-spring);
+  color: var(--colors-text-primary);
+}
+
+.sunIcon {
+  transform: translateY(0);
+}
+
+.moonIcon {
+  transform: translateY(100%);
+}
+
+.isDark {
+  .sunIcon {
+    transform: translateY(-100%);
+  }
+  .moonIcon {
+    transform: translateY(0);
+  }
+}

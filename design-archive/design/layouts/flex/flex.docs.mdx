@@ -1,0 +1,47 @@
+---
+description: A flexible layout component based on CSS Flexbox.
+labels: ['layout', 'flexbox', 'flex', 'row', 'column']
+---
+
+`Flex` is a layout component that uses CSS Flexbox to arrange, align, and distribute space among items in a container. It offers a declarative API through props to control flexbox behavior.
+
+### Basic Row Layout
+
+Arrange items in a horizontal row with a specified gap.
+
+```tsx
+<Flex gap="var(--spacing-default)">
+  <div style={{ backgroundColor: 'var(--colors-surface-primary)', color: 'var(--colors-text-primary)', border: 'var(--borders-default-width) var(--borders-default-style) var(--borders-default-color)', borderRadius: 'var(--borders-radius-medium)', padding: 'var(--spacing-large)', minWidth: '80px', textAlign: 'center', boxSizing: 'border-box' }}>Item 1</div>
+  <div style={{ backgroundColor: 'var(--colors-surface-primary)', color: 'var(--colors-text-primary)', border: 'var(--borders-default-width) var(--borders-default-style) var(--borders-default-color)', borderRadius: 'var(--borders-radius-medium)', padding: 'var(--spacing-large)', minWidth: '80px', textAlign: 'center', boxSizing: 'border-box' }}>Item 2</div>
+  <div style={{ backgroundColor: 'var(--colors-surface-primary)', color: 'var(--colors-text-primary)', border: 'var(--borders-default-width) var(--borders-default-style) var(--borders-default-color)', borderRadius: 'var(--borders-radius-medium)', padding: 'var(--spacing-large)', minWidth: '80px', textAlign: 'center', boxSizing: 'border-box' }}>Item 3</div>
+</Flex>
+```
+
+### Column Layout
+Stack items vertically in a column.
+```tsx
+<Flex flexDirection="column" gap="var(--spacing-default)">
+  <div style={{ backgroundColor: 'var(--colors-surface-primary)', color: 'var(--colors-text-primary)', border: 'var(--borders-default-width) var(--borders-default-style) var(--borders-default-color)', borderRadius: 'var(--borders-radius-medium)', padding: 'var(--spacing-large)', minWidth: '80px', textAlign: 'center', boxSizing: 'border-box' }}>Item 1</div>
+  <div style={{ backgroundColor: 'var(--colors-surface-primary)', color: 'var(--colors-text-primary)', border: 'var(--borders-default-width) var(--borders-default-style) var(--borders-default-color)', borderRadius: 'var(--borders-radius-medium)', padding: 'var(--spacing-large)', minWidth: '80px', textAlign: 'center', boxSizing: 'border-box' }}>Item 2</div>
+  <div style={{ backgroundColor: 'var(--colors-surface-primary)', color: 'var(--colors-text-primary)', border: 'var(--borders-default-width) var(--borders-default-style) var(--borders-default-color)', borderRadius: 'var(--borders-radius-medium)', padding: 'var(--spacing-large)', minWidth: '80px', textAlign: 'center', boxSizing: 'border-box' }}>Item 3</div>
+</Flex>
+```
+
+### Justify and Align Content
+Control the alignment of items along the main and cross axes.
+```tsx
+<Flex
+  justifyContent="space-between"
+  alignItems="center"
+  gap="var(--spacing-default)"
+  style={{
+    height: '200px',
+    padding: 'var(--spacing-default)',
+    backgroundColor: 'var(--colors-surface-secondary)',
+    borderRadius: 'var(--borders-radius-large)',
+  }}
+>
+  <div style={{ backgroundColor: 'var(--colors-surface-primary)', color: 'var(--colors-text-primary)', border: 'var(--borders-default-width) var(--borders-default-style) var(--borders-default-color)', borderRadius: 'var(--borders-radius-medium)', padding: 'var(--spacing-large)', minWidth: '80px', textAlign: 'center', boxSizing: 'border-box', height: '60px' }}>Item 1</div>
+  <div style={{ backgroundColor: 'var(--colors-surface-primary)', color: 'var(--colors-text-primary)', border: 'var(--borders-default-width) var(--borders-default-style) var(--borders-default-color)', borderRadius: 'var(--borders-radius-medium)', padding: 'var(--spacing-large)', minWidth: '80px', textAlign: 'center', boxSizing: 'border-box', height: '120px' }}>Item 2</div>
+  <div style={{ backgroundColor: 'var(--colors-surface-primary)', color: 'var(--colors-text-primary)', border: 'var(--borders-default-width) var(--borders-default-style) var(--borders-default-color)', borderRadius: 'var(--borders-radius-medium)', padding: 'var(--spacing-large)', minWidth: '80px', textAlign: 'center', boxSizing: 'border-box', height: '80px' }}>Item 3</div>
+</Flex>

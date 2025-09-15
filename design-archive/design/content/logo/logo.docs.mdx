@@ -1,0 +1,32 @@
+---
+description: A versatile and brand-conscious logo component.
+labels: ['logo', 'ui', 'image']
+---
+
+The `Logo` component displays the company logo and name, with options for a slogan, custom image, and different sizes.
+It can be rendered as a link or a static element.
+
+## Default Logo
+
+Displays the default Acme logo.
+
+```jsx
+<Logo />
+```
+
+## Custom Logo with Slogan and Link
+This example shows how to use a custom name, slogan, and link.
+```jsx
+<Logo name="Innovate Inc." slogan="Building the Future" href="/about" />
+```
+
+## Custom Image Logo with Size
+This example shows how to use a custom image, size, and link.
+```jsx
+<Logo
+  src="https://images.unsplash.com/photo-1554312520-818038ac6156?ixid=M3w3MDc2NDF8MHwxfHNlYXJjaHw2fHxhYnN0cmFjdCUyMGNvcnBvcmF0ZSUyMGRlc2lnbnxlbnwxfDJ8fGJsdWV8MTc1Nzg0Nzc1OHww&ixlib=rb-4.1.0"
+  name="Keystone"
+  slogan="Modern Architecture"
+  href="/"
+  logoSize={40}
+/>

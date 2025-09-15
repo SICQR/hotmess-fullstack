@@ -1,0 +1,42 @@
+---
+description: A visually striking and adaptable layout component for page sections.
+labels: ['layout', 'section', 'ui']
+---
+
+The SectionLayout component is designed to structure content on a page with a consistent and visually appealing layout. It supports an optional title, caption, and subtitle, making it versatile for various use cases.
+
+## Basic Usage
+
+This example demonstrates the basic usage of the SectionLayout component with a title, subtitle, and some content.
+
+```jsx
+<SectionLayout
+  title="Welcome to Our Platform"
+  subtitle="Explore the possibilities and discover how we can help you achieve your goals."
+>
+  <div>
+    This is the main content area. Add your text, images, or other components here.
+  </div>
+</SectionLayout>
+```
+## Full Featured Section
+This example shows how to use all available props: `caption`, `title`, and `subtitle`, to create a more detailed section header.
+```jsx
+<SectionLayout
+  caption="Getting Started"
+  title="Create Your Account"
+  subtitle="Sign up and start exploring our amazing features today."
+>
+  <div>
+    Ready to take the next step? Click the button below to create your account.
+  </div>
+</SectionLayout>
+```
+## Section with Only Content
+This example shows a SectionLayout with only content, useful for sections where a title or subtitle are not needed.
+```jsx
+<SectionLayout>
+  <div>
+    This section contains only the main content, without a title or subtitle.
+  </div>
+</SectionLayout>

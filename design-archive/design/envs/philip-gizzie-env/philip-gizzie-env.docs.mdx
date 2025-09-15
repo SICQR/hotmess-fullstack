@@ -1,0 +1,48 @@
+---
+description: 'A custom development environment for Philip Gizzie React components.'
+labels: ['env', 'react', 'dev', 'vite', 'jest', 'webpack', 'philip-gizzie']
+---
+
+A reusable development environment for React, configured for the Philip Gizzie design system.
+Use this environment to create new React components and apps that are consistent with the Philip Gizzie ecosystem.
+
+Features:
+▶️ TypeScript
+🧪 Vitest
+✨ Themed with `@philip-gizzie/design.philip-gizzie-theme` for all component previews.
+🧑‍💻 Generator templates include React UI component, React hook and apps (including Vite + SSR).
+🚀 React Workspace starter
+🦋 ESLint
+⚒️ A React optimized build pipeline.
+👓 React Preview
+
+## Use in existing workspaces
+
+Add the development env to your generator configuration on `workspace.jsonc`.
+
+```json
+{
+  "teambit.generator/generator": {
+    "envs": [
+      "philip-gizzie/philip-gizzie-env"
+    ]
+  }
+}
+```
+You can see the generator templates in your workspace using `bit templates`.
+## Use on an existing component
+Use this dev environment on your existing components, by running the following command:
+```
+bit env set my-component philip-gizzie/philip-gizzie-env
+```
+## Create a React workspace
+You can create a new React workspace made from this env using the following command:
+```
+bit new react my-workspace --aspect philip-gizzie/philip-gizzie-env
+```
+## Compose your own env
+You can base on this env, and customize it to your needs. To create your env run this command:
+```
+bit create react-env my-new-env --scope philip-gizzie
+```
+Make sure your new environment class extends this env class and overrides the needed class methods.

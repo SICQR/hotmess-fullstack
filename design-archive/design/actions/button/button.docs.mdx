@@ -1,0 +1,55 @@
+---
+description: A versatile and accessible button component that can be rendered as a button or a link. It supports primary, secondary, and tertiary visual styles.
+labels: ['button', 'ui', 'navigation']
+---
+
+## Component usage
+
+Use the `Button` component to trigger actions or navigate to different pages. It supports different appearances and can be disabled.
+
+```jsx
+<Button onClick={() => alert('Button clicked!')}>Click me</Button>
+```
+## Button Appearances
+The `Button` component supports three different appearances: primary, secondary, and tertiary.
+### Primary Button
+Primary buttons are used for the main action on a page.
+```jsx
+<Button appearance="primary" onClick={() => alert('Primary button clicked!')}>
+  Primary
+</Button>
+```
+### Secondary Button
+Secondary buttons are used for less important actions.
+```jsx
+<Button appearance="secondary" onClick={() => alert('Secondary button clicked!')}>
+  Secondary
+</Button>
+```
+### Tertiary Button
+Tertiary buttons are used for actions that are even less important or for actions that are destructive.
+```jsx
+<Button appearance="tertiary" onClick={() => alert('Tertiary button clicked!')}>
+  Tertiary
+</Button>
+```
+## Button as a Link
+The `Button` component can also be used as a link by providing the `href` property.
+### Internal Link
+```jsx
+<MemoryRouter>
+  <Button href="/internal" appearance="primary">
+    Internal Link
+  </Button>
+</MemoryRouter>
+```
+### External Link
+```jsx
+<Button href="https://bit.dev" external appearance="secondary">
+  External Link
+</Button>
+```
+## Disabled Button
+The `Button` component can be disabled by setting the `disabled` property to `true`.
+```jsx
+<Button disabled>Disabled Button</Button>

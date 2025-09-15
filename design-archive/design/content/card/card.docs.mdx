@@ -1,0 +1,54 @@
+---
+description: A versatile and visually engaging card component that serves as a flexible container for various content types.
+labels: ['card', 'ui', 'container']
+---
+
+The `Card` component is a flexible container for various types of content, such as text, images, and interactive elements. It provides a visually appealing way to group related information.
+
+## Basic Card
+
+This example demonstrates a basic card with a title and some content.
+
+```jsx
+<Card title="Basic Information Card">
+  <p style={{ margin: 0, color: 'var(--colors-text-secondary)', fontSize: 'var(--typography-sizes-body-default)' }}>
+    This is a simple card component. It serves as a container for content, featuring a title and a body section. Use it to display concise pieces of information.
+  </p>
+</Card>
+```
+## Card with Image
+This example shows a card with an image at the top, enhancing its visual appeal.
+```jsx
+<Card
+  image="https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixid=M3w3MDc2NDF8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGJsdWUlMjB0ZWNoJTIwYmFja2dyb3VuZHxlbnwxfDB8fGJsdWV8MTc1Nzg0NzQ4OXww&ixlib=rb-4.1.0"
+  imageAlt="Yellow and white abstract painting"
+  title="Card With a Visual"
+>
+  <p style={{ margin: 0, color: 'var(--colors-text-secondary)', fontSize: 'var(--typography-sizes-body-default)' }}>
+    Including an image can make the card more engaging and visually appealing. The image is displayed at the top of the card.
+  </p>
+</Card>
+```
+## Interactive Card with Header and Footer
+This example demonstrates an interactive card with a header and footer, making it suitable for previews of articles, products, or other content that links to a more detailed view.
+```jsx
+<Card
+  interactive
+  image="https://images.unsplash.com/photo-1650611250959-1e823abf6841?ixid=M3w3MDc2NDF8MHwxfHNlYXJjaHw3fHxhYnN0cmFjdCUyMGJsdWUlMjB0ZWNoJTIwYmFja2dyb3VuZHxlbnwxfDB8fGJsdWV8MTc1Nzg0NzQ4OXww&ixlib=rb-4.1.0"
+  imageAlt="Abstract folded form inspired by windows 11 wallpapers"
+  header={
+    <span style={{ fontSize: 'var(--typography-sizes-caption-default)', color: 'var(--colors-text-secondary)' }}>
+      Featured Post
+    </span>
+  }
+  footer={
+    <span style={{ fontSize: 'var(--typography-sizes-body-small)', fontWeight: 'var(--typography-font-weight-semi-bold)', color: 'var(--colors-primary-default)' }}>
+      Read More
+    </span>
+  }
+  title="Interactive Full-Featured Card"
+>
+  <p style={{ margin: 0, color: 'var(--colors-text-secondary)', fontSize: 'var(--typography-sizes-body-default)' }}>
+    This card is interactive and includes a header and a footer. It's perfect for previews of articles, products, or any content that links to a more detailed view.
+  </p>
+</Card>

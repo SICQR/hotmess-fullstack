@@ -1,0 +1,15 @@
+.header{ position:sticky; top:0; z-index:50; backdrop-filter:saturate(180%) blur(6px); background:rgba(0,0,0,.9); border-bottom:1.5px solid var(--line) }
+.header__row{ height:72px; display:flex; align-items:center; justify-content:space-between }
+.header__brand{ font-family:'Anton',sans-serif; font-size:24px; letter-spacing:-.5px; text-transform:uppercase }
+.header__menus{ display:none; gap:24px }
+@media (min-width:768px){ .header__menus{ display:flex } }
+.menu{ position:relative }
+.menu__button{ text-transform:uppercase; font-size:.85rem }
+.menu__button:hover{ color:var(--accent) }
+.menu__panel{ position:absolute; left:0; top:100%; min-width:240px; background:#000; border:1px solid var(--line); border-radius:12px; padding:8px; box-shadow:0 10px 30px rgba(0,0,0,.35); display:none }
+.menu:hover .menu__panel{ display:block }
+.menu__link{ display:block; padding:8px 10px; border-radius:8px }
+.menu__link:hover{ background:#0f0f0f }
+.header__utils{ display:flex; align-items:center; gap:10px }
+.header__chip{ padding:.35rem .7rem; border:1px solid var(--line); border-radius:9999px; font-size:.85rem }
+.header__cart{ background:var(--accent); color:#000; border:1px solid var(--accent) }

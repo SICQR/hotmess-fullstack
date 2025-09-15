@@ -1,0 +1,29 @@
+---
+description: A visually appealing and subtle spinner component for indicating loading states.
+labels: ['spinner', 'ui', 'loading']
+---
+
+The Spinner component is used to indicate a loading state in your application. It provides a visual cue to the user that a process is ongoing.
+
+## Basic Spinner
+
+This example shows the default spinner. It's a medium-sized spinner with the primary color.
+
+```jsx
+<Spinner />
+```
+## Spinner Sizes
+This example shows how to use different sizes of the spinner. You can choose between small, medium, and large sizes to fit your layout.
+```jsx
+<div style={{ display: 'flex', alignItems: 'center', gap: 'var(--spacing-xl)', padding: 'var(--spacing-large)', justifyContent: 'center' }}>
+  <Spinner size="small" />
+  <Spinner size="medium" />
+  <Spinner size="large" />
+</div>
+```
+## Custom Color Spinner
+This example demonstrates how to customize the color of the spinner using inline styles. This allows you to match the spinner's color to your brand or the context in which it is used.
+```jsx
+<div style={{ padding: 'var(--spacing-large)', display: 'flex', justifyContent: 'center' }}>
+  <Spinner size="large" style={{ borderColor: 'var(--colors-status-positive-default)', borderBottomColor: 'transparent' }} />
+</div>

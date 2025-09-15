@@ -1,0 +1,161 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  font-family: var(--typography-font-family);
+  font-weight: var(--typography-font-weight-semi-bold);
+  text-transform: uppercase;
+  letter-spacing: var(--typography-letter-spacing-normal);
+  border-radius: var(--borders-radius-circle);
+  white-space: nowrap;
+  transition:
+    background-color var(--interactions-transitions-duration-fast)
+      var(--interactions-transitions-easing-ease-in-out),
+    color var(--interactions-transitions-duration-fast)
+      var(--interactions-transitions-easing-ease-in-out),
+    border-color var(--interactions-transitions-duration-fast)
+      var(--interactions-transitions-easing-ease-in-out),
+    transform var(--interactions-transitions-duration-fast)
+      var(--interactions-transitions-easing-ease-in-out),
+    box-shadow var(--interactions-transitions-duration-fast)
+      var(--interactions-transitions-easing-ease-in-out);
+
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--effects-shadows-xs);
+  }
+}
+
+/* Sizes */
+.small {
+  padding: 2px var(--spacing-default);
+  font-size: var(--typography-sizes-caption-medium);
+  .icon {
+    font-size: 1em;
+  }
+}
+
+.medium {
+  padding: var(--spacing-small) var(--spacing-large);
+  font-size: var(--typography-sizes-caption-default);
+  .icon {
+    font-size: 1.1em;
+  }
+}
+
+.large {
+  padding: var(--spacing-default) var(--spacing-xl);
+  font-size: var(--typography-sizes-body-small);
+  .icon {
+    font-size: 1.2em;
+  }
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  margin-right: var(--spacing-small);
+}
+
+.label {
+  line-height: 1;
+}
+
+/* Variants and Colors */
+.filled {
+  border: var(--borders-default-width) solid transparent;
+
+  &.default {
+    background-color: var(--colors-surface-secondary);
+    color: var(--colors-text-primary);
+  }
+  &.primary {
+    background-color: var(--colors-primary-default);
+    color: var(--colors-text-inverse) !important;
+    &:hover {
+      background-color: var(--colors-primary-hover);
+    }
+  }
+  &.secondary {
+    background-color: var(--colors-secondary-default);
+    color: var(--colors-text-inverse) !important;
+    &:hover {
+      background-color: var(--colors-secondary-hover);
+    }
+  }
+  &.positive {
+    background-color: var(--colors-status-positive-subtle);
+    color: var(--colors-status-positive-default);
+  }
+  &.negative {
+    background-color: var(--colors-status-negative-subtle);
+    color: var(--colors-status-negative-default);
+  }
+  &.warning {
+    background-color: var(--colors-status-warning-subtle);
+    color: var(--colors-status-warning-default);
+  }
+  &.info {
+    background-color: var(--colors-status-info-subtle);
+    color: var(--colors-status-info-default);
+  }
+}
+
+.outlined {
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+
+  &.default {
+    border-color: var(--colors-surface-secondary);
+    color: var(--colors-text-secondary);
+  }
+  &.primary {
+    border-color: var(--colors-primary-default);
+    color: var(--colors-primary-default);
+  }
+  &.secondary {
+    border-color: var(--colors-secondary-default);
+    color: var(--colors-secondary-default);
+  }
+  &.positive {
+    border-color: var(--colors-status-positive-default);
+    color: var(--colors-status-positive-default);
+  }
+  &.negative {
+    border-color: var(--colors-status-negative-default);
+    color: var(--colors-status-negative-default);
+  }
+  &.warning {
+    border-color: var(--colors-status-warning-default);
+    color: var(--colors-status-warning-default);
+  }
+  &.info {
+    border-color: var(--colors-status-info-default);
+    color: var(--colors-status-info-default);
+  }
+
+  &:hover {
+    &.primary {
+      background-color: var(--colors-primary-default);
+      color: var(--colors-text-inverse) !important;
+    }
+    &.secondary {
+      background-color: var(--colors-secondary-default);
+      color: var(--colors-text-inverse) !important;
+    }
+    &.positive {
+      background-color: var(--colors-status-positive-subtle);
+    }
+    &.negative {
+      background-color: var(--colors-status-negative-subtle);
+    }
+    &.warning {
+      background-color: var(--colors-status-warning-subtle);
+    }
+    &.info {
+      background-color: var(--colors-status-info-subtle);
+    }
+  }
+}

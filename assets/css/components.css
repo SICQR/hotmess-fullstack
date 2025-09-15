@@ -1,0 +1,30 @@
+.product{ border:1px solid var(--line); border-radius:16px; padding:14px; display:flex; flex-direction:column; gap:8px; background:#000 }
+.product__title{ font-family:'Anton',sans-serif; font-size:22px; text-transform:uppercase }
+.product__meta{ font-size:.9rem; color:var(--muted) }
+.product__actions{ display:flex; gap:8px; align-items:center }
+.size-chip{ display:inline-block; padding:.3rem .55rem; border:1px solid var(--line); border-radius:9999px; font-size:.8rem }
+
+.show{ border:1px solid var(--line); border-radius:16px; padding:14px; background:#000 }
+.show__title{ font-family:'Anton',sans-serif; font-size:22px; text-transform:uppercase }
+.show__meta{ font-size:.9rem; color:var(--muted) }
+
+.tile{ border:1px solid var(--line); border-radius:16px; padding:20px; background:#000 }
+.tile:hover{ background:#0f0f0f }
+
+.consent{ border:1px solid var(--line); border-radius:12px; padding:12px; display:flex; gap:12px; align-items:center }
+.consent__txt{ font-size:.9rem }
+.consent__cta{ margin-left:auto; display:flex; gap:8px }
+
+.modal{ position:fixed; inset:0; z-index:60; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,.7); backdrop-filter:blur(6px) }
+.modal__card{ max-width:520px; width:100%; background:#000; border:1px solid var(--line); border-radius:16px; padding:20px }
+
+.cookie{ position:fixed; left:0; right:0; bottom:84px; z-index:55 }
+.cookie__inner{ max-width:var(--container); margin:0 auto; padding:0 16px }
+.cookie__bar{ display:flex; align-items:center; gap:12px; border:1px solid var(--line); border-radius:16px; padding:12px; background:rgba(0,0,0,.9); backdrop-filter:blur(6px) }
+
+.table-wrap{ overflow:auto; border:1px solid var(--line); border-radius:16px }
+.table tr:hover{ background:#0f0f0f }
+.badge{ display:inline-block; padding:.25rem .5rem; border:1px solid var(--line); border-radius:8px; font-size:.7rem; text-transform:uppercase }
+
+.form{ display:grid; gap:12px }
+.actions{ display:flex; gap:10px; align-items:center }

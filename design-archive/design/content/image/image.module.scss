@@ -1,0 +1,17 @@
+.image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: var(--borders-radius-large);
+  box-shadow: var(--effects-shadows-medium);
+  box-sizing: border-box; // Added to prevent layout overflow with padding/border
+  transition: 
+    transform var(--interactions-transitions-duration-medium) var(--interactions-transitions-easing-ease-in-out), 
+    box-shadow var(--interactions-transitions-duration-medium) var(--interactions-transitions-easing-ease-in-out);
+}
+
+.image:hover {
+  transform: scale(1.02);
+  box-shadow: var(--effects-shadows-large);
+}

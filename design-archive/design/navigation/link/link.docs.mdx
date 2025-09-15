@@ -1,0 +1,43 @@
+---
+description: A versatile link component for both internal application routing and external URLs using React Router.
+labels: ['link', 'ui', 'navigation']
+---
+
+The `Link` component provides a unified way to create both internal and external links. It leverages React Router for internal navigation and standard `<a>` tags for external URLs.
+
+## Internal Link
+
+For navigating within your application, use the `Link` component with a `href` that corresponds to a route defined in your React Router setup.
+
+```
+<MemoryRouter>
+  <Link href="/home">Go to Home</Link>
+</MemoryRouter>
+```
+This creates a link that navigates the user to the `/home` route within your application, without a full page reload.
+## External Link
+To link to external websites, set the `external` prop to `true`. This will render a standard `<a>` tag with appropriate `target` and `rel` attributes.
+```
+<MemoryRouter>
+  <Link href="https://bit.dev" external>
+    Visit Bit.dev
+  </Link>
+</MemoryRouter>
+```
+This creates a link that opens the Bit.dev website in a new tab, enhancing the user experience and maintaining security.
+## Link within Text
+The `Link` component can be seamlessly integrated within paragraphs or other text elements.
+```
+<MemoryRouter>
+  <p>
+    This is a paragraph that contains an
+    <Link href="/internal-documentation">internal link</Link>
+    and also an
+    <Link href="https://google.com" external>
+      external link to Google
+    </Link>.
+    Notice how they blend with the text.
+  </p>
+</MemoryRouter>
+```
+This example demonstrates how the `Link` component can be used to create rich, navigable text content.

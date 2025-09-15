@@ -1,0 +1,67 @@
+---
+description: A button to toggle between light and dark themes.
+labels: ['theme', 'toggle', 'ui']
+---
+
+The `ThemeToggler` component allows users to switch between light and dark themes, enhancing user experience by providing a comfortable viewing option based on their preference or environment.
+
+## Component Usage
+
+The `ThemeToggler` component can be easily integrated into your application to provide theme switching functionality.
+
+```jsx
+<ThemeToggler />
+```
+### Theme Toggler in Action
+This example demonstrates the `ThemeToggler` in a container, showcasing the default light mode and the transition to dark mode upon clicking.
+```jsx
+<PhilipGizzieTheme>
+  <div
+    style={{
+      backgroundColor: 'var(--colors-surface-background)',
+      color: 'var(--colors-text-primary)',
+      padding: 'var(--spacing-xl)',
+      height: '200px',
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 'var(--spacing-large)',
+      alignItems: 'center',
+      justifyContent: 'center',
+      fontFamily: 'var(--typography-font-family)',
+      fontSize: 'var(--typography-sizes-body-default)',
+      transition: 'all var(--interactions-transitions-duration-fast) var(--interactions-transitions-easing-ease-in-out)',
+      borderRadius: 'var(--borders-radius-large)',
+      border: 'var(--borders-default-width) var(--borders-default-style) var(--borders-default-color)',
+    }}
+  >
+    <p>Click the toggler to switch themes.</p>
+    <ThemeToggler />
+  </div>
+</PhilipGizzieTheme>
+```
+### Theme Toggler Starting in Dark Mode
+This example shows the `ThemeToggler` initialized in dark mode using the `initialTheme` prop of the `PhilipGizzieTheme` component.
+```jsx
+<PhilipGizzieTheme initialTheme="dark">
+  <div
+    style={{
+      backgroundColor: 'var(--colors-surface-background)',
+      color: 'var(--colors-text-primary)',
+      padding: 'var(--spacing-xl)',
+      height: '200px',
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 'var(--spacing-large)',
+      alignItems: 'center',
+      justifyContent: 'center',
+      fontFamily: 'var(--typography-font-family)',
+      fontSize: 'var(--typography-sizes-body-default)',
+      transition: 'all var(--interactions-transitions-duration-fast) var(--interactions-transitions-easing-ease-in-out)',
+      borderRadius: 'var(--borders-radius-large)',
+      border: 'var(--borders-default-width) var(--borders-default-style) var(--borders-default-color)',
+    }}
+  >
+    <p>Click the toggler to switch themes.</p>
+    <ThemeToggler />
+  </div>
+</PhilipGizzieTheme>

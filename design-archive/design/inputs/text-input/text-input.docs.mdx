@@ -1,0 +1,33 @@
+---
+description: A text input component for forms.
+labels: ['form', 'input', 'text']
+---
+
+A versatile text input component that supports various types and configurations.
+
+## Usage
+
+### Basic Text Input
+A simple text input field with a placeholder.
+
+```jsx
+<TextInput placeholder="Enter your text here" />
+```
+### Password Input
+An input field specifically for passwords, masking the entered text.
+```jsx
+<TextInput type="password" placeholder="Enter your password" />
+```
+### Controlled Input
+A controlled component example where the value is managed by React state.
+```jsx
+() => {
+  const [value, setValue] = React.useState('');
+  return (
+    <TextInput
+      placeholder="Enter your text"
+      value={value}
+      onChange={(e) => setValue(e.target.value)}
+    />
+  );
+}
