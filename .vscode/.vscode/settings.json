@@ -1,0 +1,20 @@
+{
+  "chat.promptFiles": true,
+  "chat.promptFilesLocations": {
+    ".github/prompts": true
+  },
+  "chat.modeFilesLocations": {
+    ".github/chatmodes": true
+  },
+  "chat.promptFilesRecommendations": {
+    "ship": true,
+    "bark": "resourceLangId == markdown || resourceLangId == javascript || resourceLangId == typescriptreact",
+    "bible": "resourceBasename =~ /README|CONTRIBUTING|DESIGN/i",
+    "legalize": "resourceExtname == .md || resourceExtname == .tsx",
+    "red-team": "resourceDirname =~ /app|pages|api/",
+    "safe-mode": true,
+    "radio-run": "resourceDirname =~ /radio|shows/"
+  },
+  "chat.fontFamily": "Inter, SF Pro Text, system-ui, Segoe UI, Roboto, Helvetica Neue, Arial",
+  "chat.fontSize": 15
+}
