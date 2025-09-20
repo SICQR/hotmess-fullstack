@@ -1,41 +1,88 @@
 # Copilot Instructions for AI Coding Agents
 
 ## Project Overview
-This is a Next.js 15+ fullstack project using the `/app` directory for routing and React Server Components. Legacy `/pages` routes have been removed in favor of the new app directory structure. The codebase uses TypeScript for most new components, with some legacy JavaScript files still present.
+This is a Next.js 15+ fullstack project with **mixed routing** — both `/app` directory (new) and `/pages` directory (legacy) are actively used. The codebase is transitioning to TypeScript with many legacy JavaScript files still present. Uses React 19, Tailwind CSS 4+, and custom design system components.
 
 ## Architecture & Key Directories
-- `app/` — Main Next.js app directory. Each subfolder is a route (e.g., `app/radio/page.tsx`).
-- `components/` — Shared React components, mix of `.js` and `.tsx` files.
-- `design-system/` & `design/` — Design system and UI primitives, organized by domain (actions, content, overlays, etc.).
-- `lib/` — API clients and utility modules (e.g., `shopifyClient.js`, `supabaseClient.js`).
-- `assets/` & `styles/` — CSS files, including Tailwind and custom styles.
-- `public/` — Static assets (not shown above, but standard for Next.js).
+- `app/` — Modern Next.js app directory routes (e.g., `/about`, `/radio`, `/shop`, `/xxx`)
+- `pages/` — Legacy Next.js pages directory routes (e.g., `/account`, `/contact`, `/affiliate`)
+- `components/` — Shared React components (mix of `.js` and `.tsx` files)
+- `design-system/src/` — Modular design system organized by domain:
+  - `actions/` (buttons), `content/` (cards, badges), `typography/` (headings, paragraphs)
+  - `inputs/`, `layouts/`, `navigation/`, `philip-gizzie-theme/`
+- `design-archive/` — Legacy design patterns and archived components
+- `lib/` — API clients and utilities (`shopifyClient.js`, `supabaseClient.js`)
+- `assets/` & `styles/` — CSS files, Tailwind config
+- `.next/` — Build artifacts (excluded from git)
 
 ## Developer Workflows
-- **Build:** `npm run build` (removes `.next` and rebuilds)
-- **Dev:** `npm run dev` (starts local server)
-- **Routing:** Use only the `app/` directory for new routes. Do not add files to `pages/`.
-- **TypeScript:** Prefer `.tsx` for new components and pages. Legacy `.js` files may exist but should be migrated when touched.
-- **Design System:** Use primitives from `design-system/` for new UI. Reference `design/` for legacy patterns.
+- **Install:** `npm install --legacy-peer-deps` (React 19 compatibility)
+- **Dev:** `npm run dev` (starts local development server)
+- **Build:** `npm run build` (production build with static generation)
+- **No test runner configured** — tests exist in `design-archive/` but no npm scripts
+
+## Routing Strategy
+- **New features:** Use `app/` directory for new routes (preferred)
+- **Legacy routes:** Keep existing `pages/` routes until migration
+- **Mixed routing is intentional** — both systems coexist during transition
+- **No API routes currently** — no `/api` directory exists in either system
+
+## Technology Stack
+- **Next.js 15.5.3** with React 19.1.1
+- **TypeScript 5.9.2** (preferred for new code)
+- **Tailwind CSS 4.1.13** with custom design tokens
+- **Design System:** Custom components from `@hotmess/design-system`
+- **External APIs:** Shopify (e-commerce), Supabase (database/auth)
+- **Styling:** CSS custom properties, SCSS support, Tailwind utilities
 
 ## Patterns & Conventions
-- **File-based Routing:** Each route is a folder in `app/` with a `page.tsx` file. Nested routes use subfolders.
-- **Component Organization:** Shared components go in `components/`. Domain-specific UI in `design-system/`.
-- **Styling:** Tailwind is primary, with custom CSS in `assets/css/` and `styles/`.
-- **API Clients:** Use modules in `lib/` for external integrations (e.g., Shopify, Supabase).
-- **No Mixed Routing:** Never duplicate routes in both `pages/` and `app/`.
+- **File-based Routing:** 
+  - App dir: `app/route/page.tsx` 
+  - Pages dir: `pages/route.js`
+- **Components:** Import from `@hotmess/design-system` for UI primitives
+- **Styling:** Use Tailwind classes + CSS custom properties (e.g., `var(--font-anton)`)
+- **TypeScript:** New files should use `.tsx`, legacy `.js` files may remain
+- **Design System Imports:** `import { Heading, Paragraph, Button } from '@hotmess/design-system'`
+
+## Design System Usage
+```tsx
+import { Heading, Paragraph, Button, Badge, SectionLayout } from '@hotmess/design-system';
+
+// Headings with semantic + visual levels
+<Heading level={1} className="text-4xl" style={{fontFamily:'var(--font-anton)'}}>Title</Heading>
+
+// Buttons with appearance variants
+<Button appearance="primary">Click me</Button>
+
+// Layout containers
+<SectionLayout title="Section" caption="Description">Content</SectionLayout>
+```
 
 ## Integration Points
-- **Shopify:** See `lib/shopifyClient.js` for e-commerce integration.
-- **Supabase:** See `lib/supabaseClient.js` for database/auth.
-- **Custom Prompts & Chat Modes:** Experimental prompt files may be located in `.github/prompts/` and chat modes in `.github/chatmodes/` (not present by default).
+- **Shopify:** `lib/shopifyClient.js` — GraphQL API for products/cart
+- **Supabase:** `lib/supabaseClient.js` — Auth and database
+- **Brand Elements:** Anton font, custom color tokens, men-only/18+ gating
+- **Special Features:** QR codes, radio integration, affiliate system
 
-## Example: Adding a New Route
-To add `/about`, create `app/about/page.tsx` and use components from `components/` and `design-system/`.
+## Key Routes (Current State)
+**App Directory:**
+- `/` (homepage), `/about`, `/radio`, `/shop`, `/records`, `/xxx`, `/payout`, `/care`, `/community`, `/debug`
+
+**Pages Directory:** 
+- `/account`, `/contact`, `/affiliate`, `/membership`, `/shows`, `/product/[handle]`
+
+## Development Guidelines
+- **Minimal Changes:** Preserve existing functionality when making updates
+- **Mixed Routing:** Don't migrate pages unless specifically requested
+- **Design System:** Use existing components before creating new ones
+- **Dependencies:** Use `--legacy-peer-deps` for npm operations
+- **Build Validation:** Always run `npm run build` to check for TypeScript errors
 
 ## Troubleshooting
-- If build errors mention route conflicts, remove duplicates from `pages/`.
-- For type errors, ensure all new code is in TypeScript and imports are correct.
+- **Build Errors:** Check for empty page files (must export default function)
+- **Type Errors:** Ensure imports match actual file extensions and exports
+- **Routing Conflicts:** Routes can exist in both systems without conflict
+- **Dependency Issues:** Use `--legacy-peer-deps` flag for React 19 compatibility
 
 ---
-For questions about project-specific patterns, review `app/`, `components/`, and `design-system/` for examples.
+**For implementation patterns, review existing pages in both `app/` and `pages/` directories.**
