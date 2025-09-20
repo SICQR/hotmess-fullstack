@@ -1,0 +1,80 @@
+[
+  {
+    "slug": "wake-the-mess",
+    "title": "Wake the Mess",
+    "host": "DJ CHAOS",
+    "schedule": "Monday-Friday 8:00-10:00 AM",
+    "one_liner": "Morning chaos that'll ruin your productivity and make you horny for life.",
+    "short_blurb": "Start your day with unhinged queer energy, hot takes that'll make your boss clutch their pearls, and music that fucks. DJ CHAOS serves reality with zero filter and maximum care. Because mornings should be messy.",
+    "long_blurb": "Wake the Mess is the morning show that refuses to play nice with capitalism's bullshit routine. DJ CHAOS delivers unfiltered queer rage, sex-positive affirmations, and tracks that'll make you late for work because you're too busy dancing in your underwear. We talk mental health, kink positivity, and why your straight friends need to do better. Plus music that fucks harder than your last disappointing hookup. Join our mess every weekday morning and remember: productivity is a scam, but pleasure is revolutionary.",
+    "tags": ["morning", "queer", "sex-positive", "mental-health", "chaos", "productivity-is-a-scam"],
+    "ctas": ["Listen live", "Add to calendar", "Get Telegram reminder"],
+    "image_url": "/shows/wake-the-mess.svg",
+    "live_room": "/community#wake-the-mess"
+  },
+  {
+    "slug": "dial-a-daddy",
+    "title": "Dial-a-Daddy",
+    "host": "DJ DADDY",
+    "schedule": "Daily 12:00-2:00 PM",
+    "one_liner": "Call in and tell daddy what you need. Unfiltered advice and daddy vibes.",
+    "short_blurb": "The ultimate daddy experience where listeners call in for advice, validation, and gentle dom energy. DJ DADDY delivers care with authority, wisdom with kink, and solutions that actually work. Safe word: more please.",
+    "long_blurb": "Dial-a-Daddy is where vulnerability meets power exchange in the most healing way possible. DJ DADDY takes your calls, texts, and voice mails, offering advice that comes from lived experience and a deep understanding of power dynamics. Whether you need help navigating a relationship, career advice from a queer perspective, or just someone to tell you you're doing great, Daddy's got you. We discuss consent, communication, and how to ask for what you need. Plus music that makes you feel held and seen. Remember: good daddies listen first, then provide exactly what you need.",
+    "tags": ["advice", "daddy", "power-exchange", "consent", "healing", "relationship-advice"],
+    "ctas": ["Listen live", "Call the show", "Get Telegram reminder"],
+    "image_url": "/shows/dial-a-daddy.svg",
+    "live_room": "/community#dial-a-daddy"
+  },
+  {
+    "slug": "hand-n-hand",
+    "title": "Hand N Hand",
+    "host": "DJ CARE",
+    "schedule": "Sundays 6:00-8:00 PM",
+    "one_liner": "Aftercare for your body and mind. HNH Sundays are for healing.",
+    "short_blurb": "The weekly wind-down where we practice radical self-care, process the week's chaos, and prepare for whatever's next. DJ CARE guides you through emotional aftercare that actually works. Sponsored by HNH MESS lube.",
+    "long_blurb": "Hand N Hand is HOTMESS Radio's dedicated aftercare session, recognizing that we all need space to decompress, process, and heal. DJ CARE creates a container for emotional safety where listeners can share their wins, struggles, and everything in between. We explore trauma-informed self-care, boundary setting, and how to show up for yourself when the world feels too much. The show features guided breathwork, community check-ins, and music that holds you like the perfect partner. This is your reminder that care isn't selfish—it's revolutionary. Brought to you by HNH MESS, the only lube with real aftercare.",
+    "tags": ["aftercare", "self-care", "healing", "community", "mental-health", "boundaries"],
+    "ctas": ["Listen live", "Join aftercare circle", "Get Telegram reminder"],
+    "image_url": "/shows/hand-n-hand.svg",
+    "live_room": "/community#hand-n-hand"
+  },
+  {
+    "slug": "pre-drinks",
+    "title": "Pre-Drinks",
+    "host": "DJ SUNSHINE",
+    "schedule": "Fridays 8:00-10:00 PM",
+    "one_liner": "Warming up your night with tunes that fuck and energy that's infectious.",
+    "short_blurb": "The ultimate Friday night warm-up where DJ SUNSHINE serves beats that build anticipation and energy that makes you want to move. Whether you're going out or staying in, we're setting the vibe right.",
+    "long_blurb": "Pre-Drinks is the Friday night ritual that transforms your energy from 'survived the week' to 'ready to fuck shit up.' DJ SUNSHINE curates the perfect progression from chill to chaos, featuring tracks that make you remember why you love your body and your life. We celebrate queer nightlife, discuss safe partying practices, and remind you that fun is a form of resistance. Whether you're getting ready for the club, a house party, or a night in with yourself, we're here to help you transition into weekend mode. The music builds, the energy rises, and by the end, you're ready for whatever the night brings. Remember: your pleasure matters, your safety matters, and you deserve to have the best fucking time.",
+    "tags": ["friday-nights", "party-prep", "nightlife", "energy", "celebration", "weekend-vibes"],
+    "ctas": ["Listen live", "Share your Friday plans", "Get Telegram reminder"],
+    "image_url": "/shows/pre-drinks.svg",
+    "live_room": "/community#pre-drinks"
+  },
+  {
+    "slug": "club-hours",
+    "title": "Club Hours",
+    "host": "DJ NIGHT",
+    "schedule": "Saturdays 10:00 PM-2:00 AM",
+    "one_liner": "Late night club vibes live from HOTMESS. Dance like nobody's watching because they're not.",
+    "short_blurb": "The Saturday night main event featuring unrelenting beats, guest DJs from the scene, and energy that carries you through the night. This is where the magic happens and inhibitions die beautifully.",
+    "long_blurb": "Club Hours is HOTMESS Radio's flagship late-night experience, bringing you four hours of pure dancefloor euphoria every Saturday. DJ NIGHT, along with rotating guest DJs from the queer underground scene, delivers sets that build and release tension like the best kind of edging. We feature everything from techno to house to experimental electronic, with a focus on tracks that make bodies move and minds dissolve. The show includes live mixes from local clubs, shoutouts to the dance community, and reminders about consent in nightlife spaces. This is music for sweaty basements, packed dancefloors, and those 3 AM moments when you realize you're exactly where you need to be. Whether you're at home, pre-gaming, or already on the floor, we're your soundtrack for transcendence through rhythm.",
+    "tags": ["club", "electronic", "techno", "house", "nightlife", "dancing"],
+    "ctas": ["Listen live", "Request a track", "Find tonight's parties"],
+    "image_url": "/shows/club-hours.svg",
+    "live_room": "/community#club-hours"
+  },
+  {
+    "slug": "midnight-confessions",
+    "title": "Midnight Confessions",
+    "host": "DJ WHISPER",
+    "schedule": "Wednesdays 11:00 PM-1:00 AM",
+    "one_liner": "Late night secrets, soft voices, and music for your most vulnerable moments.",
+    "short_blurb": "The intimate late-night show where DJ WHISPER creates space for your deepest thoughts and softest feelings. Anonymous confessions, gentle music, and conversations that heal in the darkness.",
+    "long_blurb": "Midnight Confessions is the late-night sanctuary where vulnerability becomes strength and secrets find safe harbor. DJ WHISPER guides listeners through two hours of intimate radio, featuring anonymous listener confessions, gentle musical selections, and conversations about the things we usually keep hidden. This show acknowledges that some of our most important work happens in the quiet hours, when defenses are down and truth feels possible. We discuss shame, desire, fear, hope, and all the complex emotions that visit us after midnight. The music is soft but intentional—ambient, neo-soul, experimental—creating a cocoon of sound that holds whatever you need to release. Whether you're dealing with insomnia, processing emotions, or just need someone to talk to in the dark, this is your space. Remember: your secrets are safe, your feelings are valid, and you're not alone in the darkness.",
+    "tags": ["intimate", "confessions", "vulnerability", "late-night", "emotional", "healing"],
+    "ctas": ["Listen live", "Send anonymous confession", "Get Telegram reminder"],
+    "image_url": "/shows/midnight-confessions.svg",
+    "live_room": "/community#midnight-confessions"
+  }
+]

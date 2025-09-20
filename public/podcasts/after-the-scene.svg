@@ -1,0 +1,13 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#000000"/>
+  <path d="M 100 150 Q 200 100 300 150 Q 200 200 100 150" fill="none" stroke="#FF6B35" stroke-width="4"/>
+  <circle cx="150" cy="140" r="8" fill="#FF6B35"/>
+  <circle cx="250" cy="140" r="8" fill="#FF6B35"/>
+  <circle cx="200" cy="165" r="5" fill="#FFFFFF"/>
+  
+  <text x="200" y="250" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="28" font-weight="bold">AFTER THE</text>
+  <text x="200" y="290" text-anchor="middle" fill="#FF6B35" font-family="Arial, sans-serif" font-size="32" font-weight="bold">SCENE</text>
+  
+  <text x="200" y="320" text-anchor="middle" fill="#CCCCCC" font-family="Arial, sans-serif" font-size="14">Deep dives into aftercare,</text>
+  <text x="200" y="340" text-anchor="middle" fill="#CCCCCC" font-family="Arial, sans-serif" font-size="14">processing & healing</text>
+</svg>

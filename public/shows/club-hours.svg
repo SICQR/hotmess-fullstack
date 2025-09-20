@@ -1,0 +1,15 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#000000"/>
+  <rect x="120" y="80" width="40" height="80" fill="none" stroke="#FF6B35" stroke-width="4"/>
+  <rect x="180" y="60" width="40" height="100" fill="none" stroke="#FF6B35" stroke-width="4"/>
+  <rect x="240" y="100" width="40" height="60" fill="none" stroke="#FF6B35" stroke-width="4"/>
+  
+  <text x="200" y="210" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="32" font-weight="bold">CLUB</text>
+  <text x="200" y="250" text-anchor="middle" fill="#FF6B35" font-family="Arial, sans-serif" font-size="36" font-weight="bold">HOURS</text>
+  
+  <text x="200" y="280" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="16">DJ NIGHT</text>
+  <text x="200" y="310" text-anchor="middle" fill="#CCCCCC" font-family="Arial, sans-serif" font-size="14">Sat 10PM-2AM</text>
+  
+  <rect x="50" y="340" width="300" height="2" fill="#FF6B35"/>
+  <text x="200" y="365" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="12">HOTMESS RADIO</text>
+</svg>

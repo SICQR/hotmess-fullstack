@@ -1,0 +1,13 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#000000"/>
+  <rect x="120" y="100" width="60" height="40" fill="none" stroke="#FF6B35" stroke-width="3"/>
+  <text x="150" y="125" text-anchor="middle" fill="#FF6B35" font-family="Arial, sans-serif" font-size="24" font-weight="bold">$</text>
+  <rect x="220" y="120" width="60" height="40" fill="none" stroke="#FF6B35" stroke-width="3"/>
+  <text x="250" y="145" text-anchor="middle" fill="#FF6B35" font-family="Arial, sans-serif" font-size="24" font-weight="bold">%</text>
+  
+  <text x="200" y="220" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="24" font-weight="bold">QUEER MONEY</text>
+  <text x="200" y="260" text-anchor="middle" fill="#FF6B35" font-family="Arial, sans-serif" font-size="28" font-weight="bold">TALKS</text>
+  
+  <text x="200" y="290" text-anchor="middle" fill="#CCCCCC" font-family="Arial, sans-serif" font-size="14">Financial literacy for people</text>
+  <text x="200" y="310" text-anchor="middle" fill="#CCCCCC" font-family="Arial, sans-serif" font-size="14">the system wasn't designed to support</text>
+</svg>
