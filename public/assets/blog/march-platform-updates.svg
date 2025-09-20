@@ -1,0 +1,16 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="400" fill="#000000"/>
+  <rect x="80" y="120" width="100" height="60" fill="none" stroke="#FF6B35" stroke-width="3"/>
+  <text x="130" y="155" text-anchor="middle" fill="#FF6B35" font-family="Arial, sans-serif" font-size="20" font-weight="bold">NEW</text>
+  
+  <circle cx="130" cy="220" r="15" fill="#FF6B35"/>
+  <circle cx="160" cy="240" r="12" fill="#FF6B35"/>
+  <circle cx="100" cy="240" r="10" fill="#FF6B35"/>
+  
+  <text x="500" y="140" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="36" font-weight="bold">MARCH PLATFORM</text>
+  <text x="500" y="190" text-anchor="middle" fill="#FF6B35" font-family="Arial, sans-serif" font-size="40" font-weight="bold">UPDATES</text>
+  <text x="500" y="240" text-anchor="middle" fill="#CCCCCC" font-family="Arial, sans-serif" font-size="20">New features for community care</text>
+  
+  <rect x="50" y="350" width="700" height="2" fill="#FF6B35"/>
+  <text x="400" y="380" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="16">HOTMESS PLATFORM</text>
+</svg>

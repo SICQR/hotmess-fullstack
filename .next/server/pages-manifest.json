@@ -1,13 +1,1 @@
-{
-  "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
-  "/account": "pages/account.html",
-  "/affiliate": "pages/affiliate.html",
-  "/contact": "pages/contact.html",
-  "/membership": "pages/membership.html",
-  "/product/[handle]": "pages/product/[handle].html",
-  "/shows/[slug]": "pages/shows/[slug].html",
-  "/shows": "pages/shows.html",
-  "/_document": "pages/_document.js",
-  "/404": "pages/404.html"
-}
+{}
