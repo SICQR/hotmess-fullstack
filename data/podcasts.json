@@ -1,0 +1,92 @@
+[
+  {
+    "series_slug": "hotmess-talks",
+    "series_title": "HOTMESS Talks",
+    "tagline": "Real conversations about sex, identity, and finding your people.",
+    "description": "The flagship HOTMESS podcast where we dive deep into the messy, beautiful reality of queer life. Each episode features honest conversations with community members, activists, artists, and anyone living authentically in a world that wasn't built for us. We talk about sex, relationships, mental health, creativity, and the radical act of existing as your full self.",
+    "keywords": ["queer", "lgbtq", "sex-positive", "mental-health", "community", "authenticity"],
+    "cover_url": "/podcasts/hotmess-talks.svg",
+    "episodes": [
+      {
+        "ep_number": 1,
+        "title": "Welcome to the Mess",
+        "one_liner": "An introduction to HOTMESS and why we're here to fuck up your feed.",
+        "description": "Join us for the inaugural episode where we lay out our manifesto: pleasure is political, care is radical, and your mess is welcome here. We discuss the origin story of HOTMESS, our commitment to sex-positive education, and why we believe community healing happens through authentic connection. Plus, we answer listener questions about consent, boundaries, and how to find your people in a chaotic world.",
+        "audio_url": "/audio/hotmess-talks-001.mp3",
+        "duration_s": 3420,
+        "published_at": "2024-01-15T10:00:00Z",
+        "tags": ["introduction", "manifesto", "community", "consent"]
+      },
+      {
+        "ep_number": 2,
+        "title": "Kink 101: More Than Leather and Whips",
+        "one_liner": "Demystifying kink culture and power exchange for curious minds.",
+        "description": "A comprehensive introduction to kink and BDSM culture that goes beyond stereotypes. We discuss consent frameworks, communication strategies, and how power exchange can be healing when practiced ethically. Guest expert shares insights on finding community, negotiating scenes, and the difference between fantasy and reality. Perfect for curious beginners and experienced practitioners looking to deepen their understanding.",
+        "audio_url": "/audio/hotmess-talks-002.mp3",
+        "duration_s": 4230,
+        "published_at": "2024-01-29T10:00:00Z",
+        "tags": ["kink", "bdsm", "consent", "power-exchange", "education"]
+      },
+      {
+        "ep_number": 3,
+        "title": "Trans Joy in Practice",
+        "one_liner": "Celebrating trans resilience, creativity, and the art of becoming.",
+        "description": "A celebration of trans experiences that goes beyond trauma narratives. We speak with trans artists, activists, and community members about joy, creativity, and the ongoing process of becoming yourself. Topics include chosen family, transitioning in different life stages, dating while trans, and the importance of trans-led spaces. This episode centers trans voices and experiences.",
+        "audio_url": "/audio/hotmess-talks-003.mp3",
+        "duration_s": 3890,
+        "published_at": "2024-02-12T10:00:00Z",
+        "tags": ["trans", "transgender", "joy", "community", "becoming"]
+      }
+    ]
+  },
+  {
+    "series_slug": "after-the-scene",
+    "series_title": "After the Scene",
+    "tagline": "Deep dives into aftercare, processing, and what happens when the fun ends.",
+    "description": "A podcast dedicated to the often-overlooked aspects of sexual and emotional experiences: the aftermath. Each episode explores different forms of aftercare, from post-scene processing to post-breakup healing. We discuss emotional regulation, trauma-informed practices, and how to create safety for yourself and others when vulnerability is high.",
+    "keywords": ["aftercare", "emotional-processing", "trauma-informed", "healing", "safety"],
+    "cover_url": "/podcasts/after-the-scene.svg",
+    "episodes": [
+      {
+        "ep_number": 1,
+        "title": "Aftercare Isn't Just for Kink",
+        "one_liner": "Why everyone needs post-experience processing, from first dates to job interviews.",
+        "description": "An exploration of aftercare beyond sexual contexts. We discuss how the principles of post-scene care apply to any intense emotional experience: job interviews, difficult conversations, medical appointments, and more. Learn practical techniques for emotional regulation, grounding, and creating safety in the aftermath of vulnerability.",
+        "audio_url": "/audio/after-the-scene-001.mp3",
+        "duration_s": 2980,
+        "published_at": "2024-02-26T10:00:00Z",
+        "tags": ["aftercare", "emotional-regulation", "grounding", "vulnerability"]
+      },
+      {
+        "ep_number": 2,
+        "title": "Breakup Aftercare: A Radical Approach",
+        "one_liner": "How to end relationships with care, even when it hurts like hell.",
+        "description": "A revolutionary approach to breakups that prioritizes care over closure. We discuss how to end relationships ethically, support your ex-partner's healing process, and navigate the complex emotions of conscious uncoupling. Includes practical scripts for difficult conversations and strategies for maintaining community when relationships end.",
+        "audio_url": "/audio/after-the-scene-002.mp3",
+        "duration_s": 3650,
+        "published_at": "2024-03-11T10:00:00Z",
+        "tags": ["breakups", "relationships", "conscious-uncoupling", "healing"]
+      }
+    ]
+  },
+  {
+    "series_slug": "queer-money-talks",
+    "series_title": "Queer Money Talks",
+    "tagline": "Financial literacy for people the system wasn't designed to support.",
+    "description": "Practical financial advice that acknowledges the unique challenges faced by LGBTQ+ individuals. From navigating workplace discrimination to building wealth without family support, we cover the money topics that mainstream financial advice ignores. Each episode features actionable strategies for building financial security while staying true to your values.",
+    "keywords": ["financial-literacy", "queer-finance", "wealth-building", "lgbtq", "money"],
+    "cover_url": "/podcasts/queer-money-talks.svg",
+    "episodes": [
+      {
+        "ep_number": 1,
+        "title": "The Queer Tax: Hidden Costs of Being LGBTQ+",
+        "one_liner": "Breaking down the financial impact of discrimination and how to fight back.",
+        "description": "An examination of the hidden financial costs of being LGBTQ+: from healthcare disparities to workplace discrimination to family rejection. We break down the 'queer tax' and provide strategies for building financial resilience despite systemic barriers. Includes resources for finding LGBTQ+-friendly financial advisors and institutions.",
+        "audio_url": "/audio/queer-money-talks-001.mp3",
+        "duration_s": 3120,
+        "published_at": "2024-03-25T10:00:00Z",
+        "tags": ["financial-discrimination", "lgbtq-economics", "systemic-barriers", "resilience"]
+      }
+    ]
+  }
+]
