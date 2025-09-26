@@ -42,9 +42,9 @@ export default function Footer() {
         <small>
           © {new Date().getFullYear()} HOTMESS London. Men-only, 18+. HNH MESS funds real aftercare.
           <span className="sep">•</span><a href="/legal">Legal</a>
-          <span className="sep">•</span><a href="/data">Data & Privacy Hub</a>
-          <span className="sep">•</span><a href="/accessibility">Accessibility</a>
-          <span className="sep">•</span><a href="/press">Press Room</a>
+          <span className="sep">•</span><a href="/legal/privacy">Privacy</a>
+          <span className="sep">•</span><a href="/moderation">Report Issues</a>
+          <span className="sep">•</span><a href="/care">Aftercare</a>
         </small>
       </div>
     </footer>
