@@ -1,6 +1,12 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/account": "pages/account.js"
+  "/account": "pages/account.js",
+  "/affiliate": "pages/affiliate.js",
+  "/contact": "pages/contact.js",
+  "/membership": "pages/membership.js",
+  "/product/[handle]": "pages/product/[handle].js",
+  "/shows/[slug]": "pages/shows/[slug].js",
+  "/shows": "pages/shows.js",
+  "/_document": "pages/_document.js"
 }

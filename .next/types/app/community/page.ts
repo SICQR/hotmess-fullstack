@@ -1,4 +1,4 @@
-// File: /Users/philipgizzie/Downloads/hotmess-fullstack/app/community/page.tsx
+// File: /home/runner/work/hotmess-fullstack/hotmess-fullstack/app/community/page.tsx
 import * as entry from '../../../../app/community/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
